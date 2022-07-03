@@ -11,6 +11,8 @@ body {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 .main-card {
@@ -43,9 +45,11 @@ h4 {
     margin-left: 20px !important;
     margin-top: 35px;
 }
-h6{
+
+h6 {
     color: white;
-  }
+}
+
 .sub-step {
     margin-left: 20px !important;
     margin-bottom: 10px !important;
