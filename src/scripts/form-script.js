@@ -51,13 +51,13 @@ function dataTransfer() {
             
         }
         else{
-            document.getElementById('mail_error').classList.remove('d-none');
-            setTimeout(() => {document.getElementById('mail_error').classList.add('d-none');},5000);
+            document.getElementById('mail_error').innerText='You should enter your college mail';
+            setTimeout(() => {document.getElementById('mail_error').innerText='';},5000);
         }
     }
     else{
-        document.getElementById('id_error').classList.remove('d-none');
-        setTimeout(() => {document.getElementById('id_error').classList.add('d-none');},5000);
+        document.getElementById('id_error').innerText='You should enter 17 character TH id';
+        setTimeout(() => {document.getElementById('id_error').innerText='';},5000);
         
         console.log(thForm['memid'].value.length);
     }
