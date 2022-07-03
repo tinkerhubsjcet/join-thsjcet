@@ -48,11 +48,14 @@ function dataTransfer() {
             fetch('https://member-details-api.herokuapp.com/', options);
         }
         else{
-            console.log("mail error");
+            document.getElementById('mail_error').classList.remove('d-none');
+            setTimeout(() => {document.getElementById('mail_error').classList.add('d-none');},5000);
         }
     }
     else{
-        console.log("ID error");
+        document.getElementById('id_error').classList.remove('d-none');
+        setTimeout(() => {document.getElementById('id_error').classList.add('d-none');},5000);
+        
         console.log(thForm['memid'].value.length);
     }
 }
