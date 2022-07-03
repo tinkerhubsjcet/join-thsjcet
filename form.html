@@ -49,87 +49,97 @@
         </nav>
       </div>
     </section>
-
     <main>
-      <div class="box">
-        <form method="post" name="THForm">
-          <div class="form-group row mt-5">
-            <div class="col-1"></div>
-            <label class="col-1 col-form-label labels mt-5" for="name">Name</label>
-            <div class="col-4">
-              <input id="name" name="name" type="text" required="required" class="mt-5 form-control">
-            </div>
-            <label for="phone" class="mt-5 col-1 col-form-label labels">Phone</label>
-            <div class="col-4">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text mt-5">
-                    <i class="fa fa-phone"></i>
+      <div align="center">
+        <div class="box">
+          <form method="post" name="THForm">
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-1 col-form-label labels mt-5" for="name">Name</label>
+              <div class="col-4">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text mt-5">
+                      <i class="fa fa-envelope"></i>
+                    </div>
                   </div>
+                  <input id="name" name="name" type="text" required="required" class="mt-5 form-control">
                 </div>
-                <input id="phone" name="phone" type="text" class="mt-5 form-control">
+              </div>
+              <label for="phone" class="mt-5 col-1 col-form-label labels">Phone</label>
+              <div class="col-4">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text mt-5">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                  </div>
+                  <input id="phone" name="phone" type="text" class="mt-5 form-control">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label for="mail" class="col-1 col-form-label labels">Email</label>
-            <div class="col-9">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-envelope"></i>
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label for="mail" class="col-1 col-form-label labels">Email</label>
+              <div class="col-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </div>
                   </div>
+                  <input id="mail" name="email" type="text" class="form-control" required="required">
                 </div>
-                <input id="mail" name="email" type="text" class="form-control" required="required">
               </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label for="batch" class="col-1 col-form-label labels">Batch</label>
-            <div class="col-4">
-              <select id="batch" name="batch" class="custom-select" required="required">
-                <option value="0">Select</option>
-                <option value="1">2022-26</option>
-                <option value="2">2021-25</option>
-                <option value="3">2020-24</option>
-                <option value="4">2019-23</option>
-              </select>
-            </div>
-            <label for="branch" class="col-1 col-form-label labels">Department</label>
-            <div class="col-4">
-              <select id="branch" name="dept" class="custom-select" required="required">
-                <option value="0">Select</option>
-                <option value="cse">CSE</option>
-                <option value="ec">ECE</option>
-                <option value="ee">EEE</option>
-                <option value="me">ME</option>
-                <option value="ce">CE</option>
-                <option value="ai">AI</option>
-                <option value="es">E&S</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label for="TH-ID" class="col-1 col-form-label labels">TH ID</label>
-            <div class="col-6">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-id-card"></i>
-                  </div>
-                </div>
-                <input id="TH-ID" name="memid" type="text" class="form-control" required="required">
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label for="batch" class="col-1 col-form-label labels">Batch</label>
+              <div class="col-4">
+                <select id="batch" name="batch" class="custom-select" required="required">
+                  <option value="0">Select</option>
+                  <option value="1">2022-26</option>
+                  <option value="2">2021-25</option>
+                  <option value="3">2020-24</option>
+                  <option value="4">2019-23</option>
+                </select>
+              </div>
+              <label for="branch" class="col-1 col-form-label labels">Department</label>
+              <div class="col-4">
+                <select id="branch" name="dept" class="custom-select" required="required">
+                  <option value="0">Select</option>
+                  <option value="cse">CSE</option>
+                  <option value="ec">ECE</option>
+                  <option value="ee">EEE</option>
+                  <option value="me">ME</option>
+                  <option value="ce">CE</option>
+                  <option value="ai">AI</option>
+                  <option value="es">E&S</option>
+                </select>
               </div>
             </div>
-            <div class="col-1"></div>
-            <div>
-              <button name="submit" type="button" class="btn btn-primary" onclick="dataTransfer()">Submit</button>
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label for="TH-ID" class="col-1 col-form-label labels">TH ID</label>
+              <div class="col-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-id-card"></i>
+                    </div>
+                  </div>
+                  <input id="TH-ID" name="memid" type="text" class="form-control" required="required">
+                </div>
+              </div>
             </div>
-          </div>
-        </form>
+            <div class="form-group row">
+              <div class="col-6"></div>
+              <div>
+                <button name="submit" type="button" class="btn btn-primary" onclick="dataTransfer()">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
   </div>
