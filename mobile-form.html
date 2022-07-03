@@ -23,11 +23,11 @@
 
 
         <div id="links" class="links">
-          <a class="hover-underline-animation" href="#">Foundation</a>
-          <a class="hover-underline-animation" href="#">Linkedin</a>
-          <a class="hover-underline-animation" href="#">Instagram</a>
-          <a class="hover-underline-animation" href="#">Twitter</a>
-          <a class="hover-underline-animation" href="#">GitHub</a>
+          <a class="hover-underline-animation" href="#">HOME</a>
+          <a class="hover-underline-animation" href="#">ABOUT</a>
+          <a class="hover-underline-animation" href="#">TEAM</a>
+          <a class="hover-underline-animation" href="#">EVENTS</a>
+          <a class="hover-underline-animation" href="#">BLOGS</a>
         </div>
         <button id="menu-btn" class="menu-btn" onclick="menuFunc()"><svg width="30" height="22" viewBox="0 0 18 12"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@
 
     <main>
       <div class="box">
-        <form action="">
+        <form method="post" name="THForm">
             <div class='form-inp-field'>
               <div class='form-field'>
                 <div class="Tinp-field">
@@ -63,15 +63,30 @@
   
                 <div>
                   <label>Batch</label>
-                  <input type="text" name="batch" placeholder='Batch' required>
+                  <select name="batch" id="batch" required="required">
+                    <option value="0">Select</option>
+                    <option value="1">2022-26</option>
+                    <option value="2">2021-25</option>
+                    <option value="3">2020-24</option>
+                    <option value="4">2019-23</option>
+                  </select> <br>
                   <label>Dept.</label>
-                  <input type="text" name="dept" placeholder='Department' required><br> <br>
+                  <select id="branch" name="dept" required="required">
+                    <option value="0">Select</option>
+                    <option value="cse">CSE</option>
+                    <option value="ec">ECE</option>
+                    <option value="ee">EEE</option>
+                    <option value="me">ME</option>
+                    <option value="ce">CE</option>
+                    <option value="ai">AI</option>
+                    <option value="es">E&S</option>
+                  </select>
                 </div>
                 <div class="sub-btn-field">
                   <label>Membership ID</label>
                   <input type="text" name="memid" placeholder='ID' required>
   
-                  <input type="button" value="Join Now" class="join-btn">
+                  <input type="button" value="Join Now" class="join-btn" onclick="dataTransfer()">
                 </div>
   
               </div>

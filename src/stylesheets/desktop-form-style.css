@@ -43,6 +43,13 @@ body {
   text-align: center;
 }
 
+form input , select{
+  color: white;
+  background: rgba(170, 163, 163, 0.45);
+  box-shadow: 0px 4.67554px 4.67554px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
 main .box {
   width: 80%;
   height: 320px;
