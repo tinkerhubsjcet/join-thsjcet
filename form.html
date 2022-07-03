@@ -51,37 +51,43 @@
       </div>
     </section>
     <main>
-      <div class="box">
+
+      <div style="width: 30rem;" align="center">
+        <h6 class=" text-center d-flex justify-content-center align-items-center">Fill out the form below and register
+          yourself as a
+          member of TinkerHub SJCET</h6>
+      </div>
+      <div class="box d-none" id="mobile-form">
         <form action="">
           <div class='form-inp-field'>
             <div class='form-field'>
               <div class="Tinp-field">
                 <div>
                   <label>Name</label>
-                  <input type="text" name="Name" placeholder='Name' required>
+                  <input type="text" name="name" placeholder='Name' required>
                 </div>
 
                 <div>
                   <label>Phone</label>
                   <input type="number"
                     onchange="if (this.value.length != (10 || 12)) swal('Info!', 'The typed phone number is Wrong 😯', 'info') "
-                    name="Phone" placeholder='Phone Number' required><br>
+                    name="phone" placeholder='Phone Number' required><br>
                 </div>
               </div>
 
 
               <label>Email</label>
-              <input type="email" name="Email" placeholder='yourname@gamil.com' required>
+              <input type="email" name="email" placeholder='yourname@sjcetpalai.ac.in' required>
 
               <div>
                 <label>Batch</label>
-                <input type="text" name="Deapartment" placeholder='Batch' required>
+                <input type="text" name="batch" placeholder='Batch' required>
                 <label>Dept.</label>
-                <input type="text" name="Deapartment" placeholder='Department' required><br> <br>
+                <input type="text" name="dept" placeholder='Department' required><br> <br>
               </div>
               <div class="sub-btn-field">
                 <label>Membership ID</label>
-                <input type="text" name="College" placeholder='ID' required>
+                <input type="text" name="memid" placeholder='ID' required>
 
                 <input type="button" value="Join Now" class="join-btn">
               </div>
@@ -90,7 +96,8 @@
           </div>
         </form>
       </div>
-      <!-- <div align="center">
+
+      <div id="desktop-form">
         <div class="box">
           <form method="post" name="THForm">
             <div class="form-group row">
@@ -103,7 +110,8 @@
                       <i class="fa fa-user-circle-o"></i>
                     </div>
                   </div>
-                  <input id="name" name="name" type="text" required="required" class="mt-5 form-control">
+                  <input id="name" name="name" type="text" required="required"
+                    class="mt-5 form-control form-inp d-none">
                 </div>
               </div>
               <label for="phone" class="mt-5 col-1 col-form-label labels">Phone</label>
@@ -180,7 +188,7 @@
             </div>
           </form>
         </div>
-      </div> -->
+      </div>
     </main>
   </div>
   <!-- JavaScript Bundle with Popper -->

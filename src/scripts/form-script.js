@@ -1,3 +1,13 @@
+var x = window.matchMedia("(max-width: 980px)")
+changeView(x)
+
+function changeView(x) {
+    if (x.matches) {
+        document.getElementById('desktop-form').classList.add('d-none')
+        document.getElementById('mobile-form').classList.remove('d-none')
+    }
+}
+
 function dataTransfer() {
     const thForm = document.forms['THForm']
 
@@ -40,3 +50,4 @@ function dataTransfer() {
     };
     fetch('https://member-details-api.herokuapp.com/', options);
 }
+
