@@ -46,6 +46,8 @@ function dataTransfer() {
                 body: JSON.stringify(JSONData)
             };
             fetch('https://member-details-api.herokuapp.com/', options);
+            setTimeout(() => {location.replace("success.html");},5000);
+            
         }
         else{
             document.getElementById('mail_error').classList.remove('d-none');

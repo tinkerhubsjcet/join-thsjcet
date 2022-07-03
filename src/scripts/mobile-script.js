@@ -3,7 +3,7 @@ changeView(x)
 
 function changeView(x) {
     if (!(x.matches)) {
-        //location.replace("desktop-form.html");
+        location.replace("desktop-form.html");
     }
 }
 function menuFunc() {
