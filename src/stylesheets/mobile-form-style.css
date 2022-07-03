@@ -141,7 +141,7 @@ form .Allinp-field {
   /* padding: 10px; */
 }
 
-form input.join-btn {
+form button.join-btn {
   background: linear-gradient(90deg,
       rgba(0, 96, 255, 0.96) 5.39%,
       rgba(121, 80, 215, 0.992083) 47.2%,
