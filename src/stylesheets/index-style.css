@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-image: url("/src/images/bg.png");
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main-card {
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 20px;
+}
+
+h5,
+h4 {
+    color: rgb(222, 222, 222);
+}
+
+.links {
+    text-decoration: none;
+    color: aqua;
+    margin-left: 0px !important;
+}
+
+.links:hover {
+    color: rgb(38, 186, 186);
+    cursor: pointer;
+}
+
+.steps {
+    margin-left: 20px;
+    color: white;
+}
+
+.back {
+    margin-left: 20px !important;
+    margin-top: 35px;
+}
+
+.sub-step {
+    margin-left: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.step-follow {
+    margin-bottom: 10px !important;
+}

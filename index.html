@@ -1,121 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Tinkerhub | Registration</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/stylesheets/index-style.css">
+    <link rel="stylesheet" href="src/stylesheets/navbar.css">
+    <title>Tinkerhub | Registration</title>
 </head>
 
 <body>
-  <div>
-    <div class="menu-bar">
-      <div class="div">
-        <div>
-          <img src="images/logo.png" alt="" />
+
+    <!-- Navbar -->
+    <section class="nav-bk-blue">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg pb-4">
+
+                <img src="src/images/logo.png" width="200px" class="nav-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clients">BLOGS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="links">
-          <a href="#">Foundation</a>
-          <a href="#">Linkedin</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <a href="#">GitHub</a>
+    </section>
+
+
+    <div style="height:100vh;" class="container d-flex justify-content-center align-items-center">
+        <div class="card main-card" style="width: 30rem;">
+            <div class="card-body" id="main-page">
+                <h5 class="card-title mt-2 mb-4">Are you a TinkerHub Member?</h5>
+                <p class="card-link links" onclick="display('yes')">Yes</p>
+                <p class="card-link links" onclick="display('no')">No</p>
+                <p class="card-link links" onclick="display('confused')">Confused</p>
+            </div>
+            <div class="card-body d-none" id="yes-page">
+                <h5 class="card-title mt-2 mb-5">Follow these steps carefully</h5>
+                <p class="steps">1. Go to this <a class="links" href="https://join.tinkerhub.org"
+                        target="_blank">link</a>
+                </p>
+                <p class="steps">2. Enter your registered mobile number in the input field provided. Then your
+                    membership ID will be displayed on the screen.</p>
+                <p class="steps">3. Copy the Membership ID and paste it into this <a class="links" href="form.html"
+                        target="_blank">form</a></p>
+                <p class="steps">4. Proceed</p>
+                <p class="card-link links back" onclick="display('back')">Back</p>
+            </div>
+            <div class="card-body d-none" id="no-page">
+                <h5 class="card-title mt-2 mb-5">Follow these steps carefully</h5>
+                <p class="steps">1. Go to this <a class="links" href="https://join.tinkerhub.org"
+                        target="_blank">link</a>
+                </p>
+                <p class="steps">2. Register in the portal using your mobile number. A unique membership ID will be
+                    displayed upon your successful registration.</p>
+                <p class="steps">3. Copy the Membership ID and paste it into this <a class="links" href="form.html"
+                        target="_blank">form</a></p>
+                <p class="steps">4. Proceed</p>
+                <p class="card-link links back" onclick="display('back')">Back</p>
+            </div>
+            <div class="card-body d-none" id="confused-page">
+                <h5 class="card-title mt-2 mb-5">Follow these steps carefully</h5>
+                <p class="steps">1. Go to this <a class="links" href="https://join.tinkerhub.org"
+                        target="_blank">link</a>
+                </p>
+                <p class="steps">2. Try inputting your mobile number.</p>
+                <p class="steps">3. <br><br>
+                    a. If a unique membership ID pops up, then you are registered.
+                    <br><br>
+                    b. If a new registration portal opens up then you are not registered. Continue the process of
+                    registration in the portal. A unique membership ID will be displayed upon your successful
+                    registration.
+                </p>
+                <p class="steps">4. Copy the Membership ID and paste it into this <a class="links" href="form.html"
+                        target="_blank">form</a></p>
+                <p class="card-link links back" onclick="display('back')">Back</p>
+            </div>
         </div>
-      </div>
     </div>
 
-    <main>
-      <div class="box">
-        <form method="post" name="THForm">
-          <div class="form-group row mt-5">
-            <div class="col-1"></div>
-            <label class="col-1 col-form-label labels mt-5" for="name">Name</label>
-            <div class="col-4">
-              <input id="name" name="name" type="text" required="required" class="mt-5 form-control">
-            </div>
-            <label for="phone" class="mt-5 col-1 col-form-label labels">Phone</label>
-            <div class="col-4">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text mt-5">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                </div>
-                <input id="phone" name="phone" type="text" class="mt-5 form-control">
-              </div>
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label for="mail" class="col-1 col-form-label labels">Email</label>
-            <div class="col-9">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                </div>
-                <input id="mail" name="email" type="text" class="form-control" required="required">
-              </div>
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label for="batch" class="col-1 col-form-label labels">Batch</label>
-            <div class="col-4">
-              <select id="batch" name="batch" class="custom-select" required="required">
-                <option value="0">Select</option>
-                <option value="1">2022-26</option>
-                <option value="2">2021-25</option>
-                <option value="3">2020-24</option>
-                <option value="4">2019-23</option>
-              </select>
-            </div>
-            <label for="branch" class="col-1 col-form-label labels">Department</label>
-            <div class="col-4">
-              <select id="branch" name="dept" class="custom-select" required="required">
-                <option value="0">Select</option>
-                <option value="cse">CSE</option>
-                <option value="ec">ECE</option>
-                <option value="ee">EEE</option>
-                <option value="me">ME</option>
-                <option value="ce">CE</option>
-                <option value="ai">AI</option>
-                <option value="es">E&S</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label for="TH-ID" class="col-1 col-form-label labels">TH ID</label>
-            <div class="col-6">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-id-card"></i>
-                  </div>
-                </div>
-                <input id="TH-ID" name="memid" type="text" class="form-control" required="required">
-              </div>
-            </div>
-            <div class="col-1"></div>
-            <div>
-              <button name="submit" type="button" class="btn btn-primary" onclick="dataTransfer()">Submit</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </main>
-  </div>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="src/scripts/index-script.js"></script>
 </body>
 
 </html>
