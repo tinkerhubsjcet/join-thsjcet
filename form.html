@@ -51,7 +51,46 @@
       </div>
     </section>
     <main>
-      <div align="center">
+      <div class="box">
+        <form action="">
+          <div class='form-inp-field'>
+            <div class='form-field'>
+              <div class="Tinp-field">
+                <div>
+                  <label>Name</label>
+                  <input type="text" name="Name" placeholder='Name' required>
+                </div>
+
+                <div>
+                  <label>Phone</label>
+                  <input type="number"
+                    onchange="if (this.value.length != (10 || 12)) swal('Info!', 'The typed phone number is Wrong 😯', 'info') "
+                    name="Phone" placeholder='Phone Number' required><br>
+                </div>
+              </div>
+
+
+              <label>Email</label>
+              <input type="email" name="Email" placeholder='yourname@gamil.com' required>
+
+              <div>
+                <label>Batch</label>
+                <input type="text" name="Deapartment" placeholder='Batch' required>
+                <label>Dept.</label>
+                <input type="text" name="Deapartment" placeholder='Department' required><br> <br>
+              </div>
+              <div class="sub-btn-field">
+                <label>Membership ID</label>
+                <input type="text" name="College" placeholder='ID' required>
+
+                <input type="button" value="Join Now" class="join-btn">
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- <div align="center">
         <div class="box">
           <form method="post" name="THForm">
             <div class="form-group row">
@@ -141,7 +180,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
     </main>
   </div>
   <!-- JavaScript Bundle with Popper -->
