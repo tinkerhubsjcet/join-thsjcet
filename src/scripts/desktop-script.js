@@ -3,6 +3,6 @@ changeView(x)
 
 function changeView(x) {
     if (x.matches) {
-        location.replace("mobile-Form.html");
+        location.replace("mobile-form.html");
     }
 }
