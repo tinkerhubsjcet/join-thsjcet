@@ -46,6 +46,7 @@ function dataTransfer() {
                 body: JSON.stringify(JSONData)
             };
             fetch('https://member-details-api.herokuapp.com/', options);
+            document.getElementById('submit').innerText='Processing';
             setTimeout(() => {location.replace("success.html");},5000);
             
         }
