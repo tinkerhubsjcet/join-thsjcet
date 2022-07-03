@@ -61,4 +61,9 @@ function dataTransfer() {
         console.log(thForm['memid'].value.length);
     }
 }
-
+if(document.getElementById('mail_error')){
+    document.getElementById('mail_error').classList.add('d-none');
+}
+if(document.getElementById('id_error')){
+    document.getElementById('id_error').classList.add('d-none');
+}
