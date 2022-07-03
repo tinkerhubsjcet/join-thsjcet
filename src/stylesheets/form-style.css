@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(../images/bg.png);
+  background-image: url(images/bg.png);
   height: auto;
   min-height: 100vh;
   width: 100vw;
@@ -114,6 +114,7 @@ form label {
 form input {
   margin: 15px;
   padding: 10px;
+  color: white;
   background: rgba(170, 163, 163, 0.45);
   box-shadow: 0px 4.67554px 4.67554px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -128,18 +129,14 @@ form .form-field {
   justify-content: center;
 }
 
-label {
-  color: white;
-}
-
-form .Tinp-field {
+form .Allinp-field {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.703);
   /* padding: 10px; */
 }
 
@@ -151,9 +148,7 @@ form input.join-btn {
   border-radius: 5px;
   padding: 10px 40px;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 800;
-  line-height: 137.9%;
   color: #ffffff;
   cursor: pointer;
   -webkit-transition: background-color 2s ease-out;
@@ -163,7 +158,7 @@ form input.join-btn {
 }
 
 form input.join-btn:hover {
-  background: linear-gradient(90deg, rgb(122 160 223 / 96%) 5.39%, rgb(77 0 255 / 99%) 47.2%, #8c2fcf 84.88%);
+  background: linear-gradient(90deg, rgb(35 48 68 / 96%) 5.39%, rgb(46 0 153 / 99%) 47.2%, #4d087f 84.88%);
 }
 
 @media only screen and (max-width: 610px) {
@@ -192,7 +187,7 @@ form input.join-btn:hover {
     position: absolute;
     top: -240px;
     left: 0px;
-    background-color: #2d2d2db5;
+    background-color: #34104f;
     align-items: center;
   }
 
@@ -200,7 +195,7 @@ form input.join-btn:hover {
     display: unset;
   }
 
-  form .Tinp-field {
+  form .Allinp-field {
     display: unset;
   }
 
@@ -213,12 +208,4 @@ form input.join-btn:hover {
   form .form-field {
     display: unset;
   }
-}
-
-.form-inp {
-  /* margin: 15px; */
-  /* padding: 10px; */
-  /* color: rgba(170, 163, 163, 0.45) !important; */
-  /* box-shadow: 0px 4.67554px 4.67554px rgba(0, 0, 0, 0.25); */
-  border-radius: 25px;
 }
