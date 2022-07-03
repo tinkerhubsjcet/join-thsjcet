@@ -38,5 +38,5 @@ function dataTransfer() {
         },
         body: JSON.stringify(JSONData)
     };
-    fetch('https://join-thsjcet.herokuapp.com/', options);
+    fetch('https://member-details-api.herokuapp.com/', options);
 }
