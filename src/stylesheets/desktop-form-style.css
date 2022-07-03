@@ -1,0 +1,60 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-image: url("https://tinkerhubsjcet.github.io/join-thsjcet/src/images/bg.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "DM Sans";
+}
+
+.menu-bar .div {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.menu-bar img {
+  width: 150px;
+  /* padding: 20px; */
+}
+
+.menu-bar div.links {
+  display: flex;
+}
+
+.menu-bar div.links a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.labels {
+  color: white;
+  text-align: center;
+}
+
+form input , select{
+  color: white;
+  background: rgba(170, 163, 163, 0.45);
+  box-shadow: 0px 4.67554px 4.67554px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+main .box {
+  width: 80%;
+  height: 320px;
+  /* left: 0; */
+  /* top: 1319px; */
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 20px;
+}
