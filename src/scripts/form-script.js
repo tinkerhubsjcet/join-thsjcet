@@ -6,8 +6,8 @@ function mailCheck(input) {
 
 function dataTransfer() {
     const thForm = document.forms['THForm']
-    if(thForm['memid'].value.length==17){
-        if(mailCheck(thForm['email'].value)){
+    if (thForm['memid'].value.length == 17) {
+        if ((thForm['email'].value).includes("sjcetpalai.ac.in")) {
             let batch
             switch (thForm['batch'].value) {
                 case '1':
@@ -46,19 +46,19 @@ function dataTransfer() {
                 body: JSON.stringify(JSONData)
             };
             fetch('https://member-details-api.herokuapp.com/', options);
-            document.getElementById('submit').innerText='Processing';
-            setTimeout(() => {location.replace("success.html");},5000);
-            
+            document.getElementById('submit').innerText = 'Processing';
+            setTimeout(() => { location.replace("success.html"); }, 5000);
+
         }
-        else{
-            document.getElementById('mail_error').innerText='You should enter your college mail';
-            setTimeout(() => {document.getElementById('mail_error').innerText='';},5000);
+        else {
+            document.getElementById('mail_error').innerText = 'You should enter your college mail';
+            setTimeout(() => { document.getElementById('mail_error').innerText = ''; }, 5000);
         }
     }
-    else{
-        document.getElementById('id_error').innerText='You should enter 17 character TH id';
-        setTimeout(() => {document.getElementById('id_error').innerText='';},5000);
-        
+    else {
+        document.getElementById('id_error').innerText = 'You should enter 17 character TH id';
+        setTimeout(() => { document.getElementById('id_error').innerText = ''; }, 5000);
+
         console.log(thForm['memid'].value.length);
     }
 }
